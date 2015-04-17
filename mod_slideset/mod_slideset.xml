@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>JJ Slideset</name>
+    <author>JoomJunk</author>
+	<creationDate>17th Mar 2015</creationDate>
+	<copyright>Copyright (C) 2011 - 2015 JoomJunk</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>admin@joomjunk.co.uk</authorEmail>
+    <version>1.0.0</version>
+    <description>JJ_SLIDESET_INSTALLATION</description>
+	
+    <languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_slideset.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_slideset.sys.ini</language>		
+    </languages>
+	
+	<scriptfile>script.php</scriptfile>
+	
+	<media folder="media" destination="mod_slideset">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+    <files>
+        <filename>mod_slideset.xml</filename>
+        <filename module="mod_slideset">mod_slideset.php</filename>
+        <filename>index.html</filename>
+		<folder>tmpl</folder>
+    </files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="Basic">
+				
+				<field name="uploadimages" type="media" directory="mod_slideset" label="SPONSORS_UPLOAD_IMAGES" />
+				
+				<field 
+					name="slideset" 
+					type="Repeatable" 
+					icon="list" 
+					label="Images"
+					default="{
+						'slideset_image':['1.gif', '2.gif']
+					}"
+				>
+					<fields name="params">
+						<fieldset hidden="true" name="slideset_modal" repeat="true">
+							<field name="slideset_image"
+								label="Image"
+								type="text" />
+						</fieldset>
+					</fields>
+				</field>
+				
+			</fieldset>
+			
+			<fieldset name="Other">
+				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
