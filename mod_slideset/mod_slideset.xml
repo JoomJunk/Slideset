@@ -8,14 +8,14 @@
 	<authorEmail>admin@joomjunk.co.uk</authorEmail>
     <version>1.0.0</version>
     <description>JJ_SLIDESET_INSTALLATION</description>
-	
+
     <languages>
 		<language tag="en-GB">language/en-GB/en-GB.mod_slideset.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.mod_slideset.sys.ini</language>		
     </languages>
-	
+
 	<scriptfile>script.php</scriptfile>
-	
+
 	<media folder="media" destination="mod_slideset">
 		<filename>index.html</filename>
 		<folder>css</folder>
@@ -28,7 +28,7 @@
         <filename>index.html</filename>
 		<folder>tmpl</folder>
     </files>
-	
+
 	<config>
 		<fields name="params">
 			<fieldset name="Basic">
