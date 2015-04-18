@@ -15,6 +15,7 @@ JHtml::_('stylesheet', JUri::root() . 'media/mod_slideset/css/uikit.min.css');
 
 
 // Load JS
+JHtml::_('jquery.framework');
 JHtml::_('script', JUri::root() . 'media/mod_slideset/js/uikit.min.js');
 JHtml::_('script', JUri::root() . 'media/mod_slideset/js/slideset.min.js');
 
