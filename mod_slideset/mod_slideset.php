@@ -25,11 +25,26 @@ JHtml::_('script', JUri::root() . 'media/mod_slideset/js/slideset.min.js');
 
 
 // Get params
+$images 	= $params->get('slideset');
 $items 		= $params->get('items', 3);
 $animation 	= $params->get('animation', 'scale');
 $duration 	= $params->get('duration', 200);
 $nav 		= $params->get('nav', 'both');
-$images 	= $params->get('slideset');
+$navcolour 	= $params->get('navcolour', 'default');
+
+
+// Switch between the dark and light navigation
+switch ($navcolour)
+{
+	case 'contrast':
+		$slidenav_class = 'uk-slidenav-contrast';
+		$dotnav_class 	= 'uk-dotnav-contrast';
+		break;
+	default:
+		$slidenav_class = 'uk-slidenav-default';
+		$dotnav_class 	= 'uk-dotnav-default';
+		break;
+}
 
 
 $path 	= JUri::root() . 'images/slideset/';

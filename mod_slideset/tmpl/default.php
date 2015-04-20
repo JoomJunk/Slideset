@@ -30,14 +30,14 @@ defined('_JEXEC')  or die('Restricted access');
 		</ul>
 		
 		<?php if ($nav == 'slidenav' || $nav == 'both') : ?>
-			<a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
-			<a href="" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
+			<a href="" class="uk-slidenav <?php echo $slidenav_class; ?> uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+			<a href="" class="uk-slidenav <?php echo $slidenav_class; ?> uk-slidenav-next" data-uk-slideset-item="next"></a>
 		<?php endif; ?>
 		
 	</div>
 	
 	<?php if ($nav == 'dotnav' || $nav == 'both') : ?>
-		<ul class="uk-slideset-nav uk-dotnav uk-flex-center"></ul>
+		<ul class="uk-slideset-nav uk-dotnav <?php echo $dotnav_class; ?> uk-flex-center"></ul>
 	<?php endif; ?>
 	
 </div>
