@@ -21,7 +21,7 @@ JHtml::_('script', JUri::root() . 'media/mod_slideset/js/slideset.min.js');
 
 
 // Get params
-$default 	= $params->get('default', 3);
+$items 		= $params->get('items', 3);
 $animation 	= $params->get('animation', 'scale');
 $duration 	= $params->get('duration', 200);
 

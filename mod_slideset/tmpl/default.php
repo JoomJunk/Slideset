@@ -11,10 +11,10 @@ defined('_JEXEC')  or die('Restricted access');
 
 ?>
 
-<div data-uk-slideset="{default: <?php echo $default; ?>, animation: '<?php echo $animation; ?>', duration: <?php echo $duration; ?>}">
+<div data-uk-slideset="{default: <?php echo $items; ?>, animation: '<?php echo $animation; ?>', duration: <?php echo $duration; ?>}">
 	
 	<div class="uk-margin">
-		<ul class="uk-slideset uk-grid">
+		<ul class="uk-slideset uk-grid uk-flex-center">
 			<li><img src="http://placehold.it/270x130"></li>
 			<li><img src="http://placehold.it/270x130"></li>
 			<li><img src="http://placehold.it/270x130"></li>
