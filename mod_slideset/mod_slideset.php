@@ -24,6 +24,7 @@ JHtml::_('script', JUri::root() . 'media/mod_slideset/js/slideset.min.js');
 $items 		= $params->get('items', 3);
 $animation 	= $params->get('animation', 'scale');
 $duration 	= $params->get('duration', 200);
+$nav 		= $params->get('nav', 'both');
 
 
 require JModuleHelper::getLayoutPath('mod_slideset');

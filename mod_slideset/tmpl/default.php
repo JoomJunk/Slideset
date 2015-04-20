@@ -13,7 +13,7 @@ defined('_JEXEC')  or die('Restricted access');
 
 <div data-uk-slideset="{default: <?php echo $items; ?>, animation: '<?php echo $animation; ?>', duration: <?php echo $duration; ?>}">
 	
-	<div class="uk-margin">
+	<div class="uk-slidenav-position uk-margin">
 		<ul class="uk-slideset uk-grid uk-flex-center">
 			<li><img src="http://placehold.it/270x130"></li>
 			<li><img src="http://placehold.it/270x130"></li>
@@ -21,9 +21,20 @@ defined('_JEXEC')  or die('Restricted access');
 			<li><img src="http://placehold.it/270x130"></li>
 			<li><img src="http://placehold.it/270x130"></li>
 			<li><img src="http://placehold.it/270x130"></li>
+			<li><img src="http://placehold.it/270x130"></li>
+			<li><img src="http://placehold.it/270x130"></li>
+			<li><img src="http://placehold.it/270x130"></li>
 		</ul>
+		
+		<?php if ($nav == 'slidenav' || $nav == 'both') : ?>
+			<a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+			<a href="" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
+		<?php endif; ?>
+		
 	</div>
 	
-	<ul class="uk-slideset-nav uk-dotnav uk-flex-center"></ul>
+	<?php if ($nav == 'dotnav' || $nav == 'both') : ?>
+		<ul class="uk-slideset-nav uk-dotnav uk-flex-center"></ul>
+	<?php endif; ?>
 	
 </div>

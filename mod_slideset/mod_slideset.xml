@@ -66,6 +66,12 @@
 				
 				<field name="duration" type="text" default="200" label="JJ_SLIDESET_DURATION_LABEL" description="JJ_SLIDESET_DURATION_DESC" />
 				
+				<field name="nav" type="list" default="both" label="JJ_SLIDESET_NAV_LABEL" description="JJ_SLIDESET_NAV_DESC">
+					<option value="dotnav">JJ_SLIDESET_NAV_DOTNAV</option>
+					<option value="slidenav">JJ_SLIDESET_NAV_SLIDENAV</option>
+					<option value="both">JJ_SLIDESET_NAV_BOTH</option>
+				</field>
+				
 			</fieldset>
 			
 			<fieldset name="advanced">
