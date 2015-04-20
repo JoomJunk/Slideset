@@ -42,7 +42,7 @@
 					icon="list" 
 					label="JJ_SLIDESET_SELECT_IMAGES_LABEL"
 					default="{
-						'slideset_image':['1.gif', '2.gif']
+						'slideset_image':['placehold.it/270x150', 'placehold.it/270x150', 'placehold.it/270x150', 'placehold.it/270x150', 'placehold.it/270x150', 'placehold.it/270x150']
 					}"
 				>
 					<fields name="params">
