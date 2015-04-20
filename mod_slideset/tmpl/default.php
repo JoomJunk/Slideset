@@ -14,16 +14,19 @@ defined('_JEXEC')  or die('Restricted access');
 <div data-uk-slideset="{default: <?php echo $items; ?>, animation: '<?php echo $animation; ?>', duration: <?php echo $duration; ?>}">
 	
 	<div class="uk-slidenav-position uk-margin">
-		<ul class="uk-slideset uk-grid uk-flex-center">
-			<li><img src="http://placehold.it/270x130"></li>
-			<li><img src="http://placehold.it/270x130"></li>
-			<li><img src="http://placehold.it/270x130"></li>
-			<li><img src="http://placehold.it/270x130"></li>
-			<li><img src="http://placehold.it/270x130"></li>
-			<li><img src="http://placehold.it/270x130"></li>
-			<li><img src="http://placehold.it/270x130"></li>
-			<li><img src="http://placehold.it/270x130"></li>
-			<li><img src="http://placehold.it/270x130"></li>
+		<ul class="uk-slideset uk-grid uk-flex-center">	
+		
+			<?php	
+			$i = 0;
+			
+			foreach ($group as $index => $value) 
+			{	
+				$i++;
+				
+				echo '<li><img src="' . $path . $value[0] . '" alt="" /></li>';	
+			}
+			?>
+			
 		</ul>
 		
 		<?php if ($nav == 'slidenav' || $nav == 'both') : ?>

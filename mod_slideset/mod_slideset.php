@@ -10,6 +10,10 @@
 defined('_JEXEC') or die('Restricted access');
 
 
+// Get the helper file
+require_once dirname(__FILE__) . '/helper.php';
+
+
 // Load CSS
 JHtml::_('stylesheet', JUri::root() . 'media/mod_slideset/css/uikit.min.css');
 
@@ -25,6 +29,11 @@ $items 		= $params->get('items', 3);
 $animation 	= $params->get('animation', 'scale');
 $duration 	= $params->get('duration', 200);
 $nav 		= $params->get('nav', 'both');
+$images 	= $params->get('slideset');
+
+
+$path 	= JUri::root() . 'images/slideset/';
+$group 	= ModSlidesetHelper::group_by_key( json_decode($images, true) );
 
 
 require JModuleHelper::getLayoutPath('mod_slideset');
