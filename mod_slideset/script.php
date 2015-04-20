@@ -31,7 +31,7 @@ class Mod_SlidesetInstallerScript
 		$jVersion             = new JVersion;
 		$minimumJoomlaVersion = '3.4.0';
 		
-		if (!$version->isCompatible($minimumJoomlaVersion))
+		if (!$jVersion->isCompatible($minimumJoomlaVersion))
 		{
 			echo JText::sprintf('MOD_SLIDESET_JOOMLA_NOT_COMPATIBLE', $minimumJoomlaVersion);
 
