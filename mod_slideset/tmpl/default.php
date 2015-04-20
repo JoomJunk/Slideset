@@ -24,9 +24,6 @@ defined('_JEXEC')  or die('Restricted access');
 		</ul>
 	</div>
 	
-	<ul class="uk-slideset-nav uk-dotnav uk-flex-center">
-		<li data-uk-slideset-item="0"><a href="">&nbsp;</a></li>
-		<li data-uk-slideset-item="1"><a href="">&nbsp;</a></li>
-	</ul>
+	<ul class="uk-slideset-nav uk-dotnav uk-flex-center"></ul>
 	
 </div>
