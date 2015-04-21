@@ -20,6 +20,7 @@
 		<filename>index.html</filename>
 		<folder>css</folder>
 		<folder>js</folder>
+		<folder>img</folder>
 	</media>
 
     <files>
@@ -82,13 +83,13 @@
 			
 			<fieldset name="JJ_SLIDESET_REEPONSIVE">
 				
-				<field name="small" type="text" default="2" label="JJ_SLIDESET_ITEMS_SMALL_LABEL" description="JJ_SLIDESET_ITEMS_SMALL_DESC" />
+				<field name="small" type="text" default="" label="JJ_SLIDESET_ITEMS_SMALL_LABEL" description="JJ_SLIDESET_ITEMS_SMALL_DESC" />
 				
-				<field name="medium" type="text" default="4" label="JJ_SLIDESET_ITEMS_MEDIUM_LABEL" description="JJ_SLIDESET_ITEMS_MEDIUM_DESC" />
+				<field name="medium" type="text" default="" label="JJ_SLIDESET_ITEMS_MEDIUM_LABEL" description="JJ_SLIDESET_ITEMS_MEDIUM_DESC" />
 				
-				<field name="large" type="text" default="6" label="JJ_SLIDESET_ITEMS_LARGE_LABEL" description="JJ_SLIDESET_ITEMS_LARGE_DESC" />
+				<field name="large" type="text" default="" label="JJ_SLIDESET_ITEMS_LARGE_LABEL" description="JJ_SLIDESET_ITEMS_LARGE_DESC" />
 				
-				<field name="xlarge" type="text" default="6" label="JJ_SLIDESET_ITEMS_XLARGE_LABEL" description="JJ_SLIDESET_ITEMS_XLARGE_DESC" />				
+				<field name="xlarge" type="text" default="" label="JJ_SLIDESET_ITEMS_XLARGE_LABEL" description="JJ_SLIDESET_ITEMS_XLARGE_DESC" />				
 				
 			</fieldset>
 			
