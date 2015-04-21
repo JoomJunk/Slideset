@@ -1,17 +1,18 @@
 <?php
 /**
- * @package    JJ_Social_Slider
- * @author     JoomJunk <admin@joomjunk.co.uk>
- * @copyright  Copyright (C) 2011 - 2014 JoomJunk. All Rights Reserved
- * @license    GPL v3.0 or later http://www.gnu.org/licenses/gpl-3.0.html
- */
+* @package    JJ_Slideset
+* @author     JoomJunk <admin@joomjunk.co.uk>
+* @copyright  Copyright (C) 2011 - 2015 JoomJunk. All Rights Reserved
+* @license    GPL v3.0 or later http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
 /**
  * Slideset installation script class.
  *
- * @since  1.0
+ * @since  1.0.0
  */
 class Mod_SlidesetInstallerScript
 {
@@ -24,7 +25,7 @@ class Mod_SlidesetInstallerScript
 	 *
 	 * @return  void
 	 *
-	 * @since  1.3.3
+	 * @since  1.0.0
 	 */
 	public function preflight($type, $parent)
 	{
@@ -46,7 +47,7 @@ class Mod_SlidesetInstallerScript
 	 *
 	 * @return  void
 	 *
-	 * @since  1.3.3
+	 * @since  1.0.0
 	 */
 	public function install($parent)
 	{
