@@ -30,6 +30,11 @@ defined('_JEXEC')  or die('Restricted access');
 			{	
 				$i++;
 				
+				if ($value[0] == 'http://placehold.it/270x150')
+				{
+					$path = '';
+				}
+				
 				echo '<li><img src="' . $path . $value[0] . '" alt="" /></li>';	
 			}
 			?>

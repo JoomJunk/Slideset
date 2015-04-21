@@ -42,10 +42,7 @@
 					type="Repeatable" 
 					icon="list" 
 					label="JJ_SLIDESET_SELECT_IMAGES_LABEL"
-					default="{
-						'slideset_image':['placehold.it/270x150', 'placehold.it/270x150', 'placehold.it/270x150', 'placehold.it/270x150', 'placehold.it/270x150', 'placehold.it/270x150']
-					}"
-				>
+					default='{"slideset_image":["http://placehold.it/270x150", "http://placehold.it/270x150", "http://placehold.it/270x150", "http://placehold.it/270x150", "http://placehold.it/270x150", "http://placehold.it/270x150"]}'>
 					<fields name="params">
 						<fieldset hidden="true" name="slideset_modal" repeat="true">
 							<field name="slideset_image"
