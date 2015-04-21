@@ -51,9 +51,12 @@ class Mod_SlidesetInstallerScript
 	 */
 	public function install($parent)
 	{
-		if (JFolder::create(JPATH_ROOT . '/images/slideset'))
+		if (!JFolder::exists(JPATH_ROOT . '/images/slideset'))
 		{
-			echo JText::_('MOD_SLIDESET_COULD_NOT_CREATE_IMAGES_DIR');
+			if (!JFolder::create(JPATH_ROOT . '/images/slideset'))
+			{
+				echo JText::_('MOD_SLIDESET_COULD_NOT_CREATE_IMAGES_DIR');
+			}
 		}
 	}
 }
