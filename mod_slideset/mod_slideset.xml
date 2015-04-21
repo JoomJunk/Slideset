@@ -80,6 +80,18 @@
 				
 			</fieldset>
 			
+			<fieldset name="JJ_SLIDESET_REEPONSIVE">
+				
+				<field name="small" type="text" default="2" label="JJ_SLIDESET_ITEMS_SMALL_LABEL" description="JJ_SLIDESET_ITEMS_SMALL_DESC" />
+				
+				<field name="medium" type="text" default="4" label="JJ_SLIDESET_ITEMS_MEDIUM_LABEL" description="JJ_SLIDESET_ITEMS_MEDIUM_DESC" />
+				
+				<field name="large" type="text" default="6" label="JJ_SLIDESET_ITEMS_LARGE_LABEL" description="JJ_SLIDESET_ITEMS_LARGE_DESC" />
+				
+				<field name="xlarge" type="text" default="6" label="JJ_SLIDESET_ITEMS_XLARGE_LABEL" description="JJ_SLIDESET_ITEMS_XLARGE_DESC" />				
+				
+			</fieldset>
+			
 			<fieldset name="advanced">
 				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
 			</fieldset>

@@ -31,6 +31,10 @@ $animation 	= $params->get('animation', 'scale');
 $duration 	= $params->get('duration', 200);
 $nav 		= $params->get('nav', 'both');
 $navcolour 	= $params->get('navcolour', 'default');
+$small		= $params->get('small', 2);
+$medium		= $params->get('medium', 4);
+$large		= $params->get('large', 6);
+$xlarge		= $params->get('xlarge', 6);
 
 
 // Switch between the dark and light navigation
