@@ -34,7 +34,7 @@ class Mod_SlidesetInstallerScript
 		
 		if (!$jVersion->isCompatible($minimumJoomlaVersion))
 		{
-			echo JText::sprintf('MOD_SLIDESET_JOOMLA_NOT_COMPATIBLE', $minimumJoomlaVersion);
+			echo JText::sprintf('JJ_SLIDESET_JOOMLA_NOT_COMPATIBLE', $minimumJoomlaVersion);
 
 			return false;
 		}
@@ -55,7 +55,7 @@ class Mod_SlidesetInstallerScript
 		{
 			if (!JFolder::create(JPATH_ROOT . '/images/slideset'))
 			{
-				echo JText::_('MOD_SLIDESET_COULD_NOT_CREATE_IMAGES_DIR');
+				echo JText::_('JJ_SLIDESET_COULD_NOT_CREATE_IMAGES_DIR');
 			}
 		}
 	}
