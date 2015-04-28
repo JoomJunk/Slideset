@@ -71,7 +71,7 @@
 					<option value="both">JJ_SLIDESET_NAV_BOTH</option>
 				</field>
 				
-				<field name="navcolour" type="radio" class="btn-group" default="default" label="JJ_SLIDESET_NAV_COLOUR_LABEL" description="JJ_SLIDESET_NAV_DESC">
+				<field name="navcolour" type="radio" class="btn-group" default="default" label="JJ_SLIDESET_NAV_COLOUR_LABEL" description="JJ_SLIDESET_NAV_COLOUR_DESC">
 					<option value="contrast">JJ_SLIDESET_NAV_COLOUR_LIGHT</option>
 					<option value="default">JJ_SLIDESET_NAV_COLOUR_DARK</option>
 				</field>
