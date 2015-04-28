@@ -13,6 +13,7 @@ defined('_JEXEC') or die('Restricted access');
 // Get the helper file
 require_once dirname(__FILE__) . '/helper.php';
 
+$helper = new ModSlidesetHelper;
 
 // Load CSS
 JHtml::_('stylesheet', JUri::root() . 'media/mod_slideset/css/uikit.min.css');
@@ -52,7 +53,7 @@ switch ($navcolour)
 
 
 $path 	= JUri::root() . 'images/slideset/';
-$group 	= ModSlidesetHelper::group_by_key( json_decode($images, true) );
+$group 	= $helper->group_by_key( json_decode($images, true) );
 
 
 require JModuleHelper::getLayoutPath('mod_slideset');
