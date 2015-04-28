@@ -76,6 +76,13 @@
 					<option value="default">JJ_SLIDESET_NAV_COLOUR_DARK</option>
 				</field>
 				
+				<field name="autoplay" type="radio" class="btn-group" default="0" label="JJ_SLIDESET_AUTOPLAY_LABEL" description="JJ_SLIDESET_AUTOPLAY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="autoplayInt" showon="autoplay:1" type="text" default="7000" label="JJ_SLIDESET_AUTOPLAY_INTERVAL_LABEL" description="JJ_SLIDESET_AUTOPLAY_INTERVAL_DESC"/>
+				
 			</fieldset>
 			
 			<fieldset name="JJ_SLIDESET_REEPONSIVE">

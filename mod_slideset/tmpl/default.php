@@ -18,7 +18,10 @@ defined('_JEXEC')  or die('Restricted access');
 	small: <?php echo $small; ?>, 
 	medium: <?php echo $medium; ?>, 
 	large: <?php echo $large; ?>, 
-	xlarge: <?php echo $xlarge; ?>}">
+	xlarge: <?php echo $xlarge; ?>,
+	autoplay: <?php echo $autoplayVal; ?>,
+	autoplayInterval: <?php echo $autoplayInt; ?>
+	}">
 	
 	<div class="uk-slidenav-position uk-margin">
 		<ul class="uk-slideset uk-grid uk-flex-center">	

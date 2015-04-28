@@ -26,16 +26,22 @@ JHtml::_('script', JUri::root() . 'media/mod_slideset/js/slideset.min.js');
 
 
 // Get params
-$images 	= $params->get('slideset');
-$items 		= $params->get('items', 3);
-$animation 	= $params->get('animation', 'scale');
-$duration 	= $params->get('duration', 200);
-$nav 		= $params->get('nav', 'both');
-$navcolour 	= $params->get('navcolour', 'default');
-$small		= $params->get('small', 'null');
-$medium		= $params->get('medium', 'null');
-$large		= $params->get('large', 'null');
-$xlarge		= $params->get('xlarge', 'null');
+$images 		= $params->get('slideset');
+$items 			= $params->get('items', 3);
+$animation 		= $params->get('animation', 'scale');
+$duration 		= $params->get('duration', 200);
+$nav 			= $params->get('nav', 'both');
+$navcolour 		= $params->get('navcolour', 'default');
+$small			= $params->get('small', 'null');
+$medium			= $params->get('medium', 'null');
+$large			= $params->get('large', 'null');
+$xlarge			= $params->get('xlarge', 'null');
+$autoplay		= $params->get('autoplay', 0);
+$autoplayInt	= $params->get('autoplayInt', 7000);
+
+
+// Set autoplay to true or false depending on parameter value
+$autoplayVal = ($autoplay == 1 ? true : 0);
 
 
 // Switch between the dark and light navigation
