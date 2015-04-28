@@ -38,10 +38,12 @@ $large			= $params->get('large', 'null');
 $xlarge			= $params->get('xlarge', 'null');
 $autoplay		= $params->get('autoplay', 0);
 $autoplayInt	= $params->get('autoplayInt', 7000);
+$pause			= $params->get('pause', 0);
 
 
-// Set autoplay to true or false depending on parameter value
-$autoplayVal = ($autoplay == 1 ? true : 0);
+// Set set values depending on variables
+$autoplayVal 	= ($autoplay == 1 ? true : 0);
+$pauseVal 		= ($pause == 1 ? true : 0);
 
 
 // Switch between the dark and light navigation

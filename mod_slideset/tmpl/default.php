@@ -20,7 +20,8 @@ defined('_JEXEC')  or die('Restricted access');
 	large: <?php echo $large; ?>, 
 	xlarge: <?php echo $xlarge; ?>,
 	autoplay: <?php echo $autoplayVal; ?>,
-	autoplayInterval: <?php echo $autoplayInt; ?>
+	autoplayInterval: <?php echo $autoplayInt; ?>,
+	pauseOnHover: <?php echo $pauseVal; ?>
 	}">
 	
 	<div class="uk-slidenav-position uk-margin">
