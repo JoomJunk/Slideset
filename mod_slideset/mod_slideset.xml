@@ -35,6 +35,8 @@
 		<fields name="params">
 			<fieldset name="Basic">
 				
+				<field name="instructions" type="note" label="JJ_SLIDESET_INSTRUCTIONS" />
+				
 				<field name="uploadimages" type="media" directory="slideset" label="JJ_SLIDESET_UPLOAD_IMAGES_LABEL" />
 				
 				<field 
