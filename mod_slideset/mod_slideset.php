@@ -42,8 +42,23 @@ $pause			= $params->get('pause', 0);
 
 
 // Set set values depending on variables
-$autoplayVal 	= ($autoplay == 1 ? true : 0);
-$pauseVal 		= ($pause == 1 ? true : 0);
+if ($autoplay == 1)
+{
+	$autoplayVal = true;
+}
+else
+{
+	$autoplayVal = 0;
+}
+
+if ($pause == 1)
+{
+	$pauseVal = true;
+}
+else
+{
+	$pauseVal = 0;
+}
 
 
 // Switch between the dark and light navigation
