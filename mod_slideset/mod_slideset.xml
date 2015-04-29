@@ -13,6 +13,10 @@
 		<language tag="en-GB">language/en-GB/en-GB.mod_slideset.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.mod_slideset.sys.ini</language>		
     </languages>
+    
+    <updateservers>
+	<server type="extension" name="JJ Slideset" priority="1">http://www.joomjunk.co.uk/updates/slideset_update.xml</server>
+    </updateservers>
 
 	<scriptfile>script.php</scriptfile>
 
