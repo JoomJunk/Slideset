@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.0" client="site" method="upgrade">
-    <name>JJ Slideset</name>
-    <author>JoomJunk</author>
+	<name>JJ Slideset</name>
+	<author>JoomJunk</author>
 	<creationDate>17th Mar 2015</creationDate>
 	<copyright>Copyright (C) 2011 - 2015 JoomJunk</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
 	<authorEmail>admin@joomjunk.co.uk</authorEmail>
-    <version>1.0.0</version>
-    <description>JJ_SLIDESET_INSTALLATION</description>
+	<version>1.0.0</version>
+	<description>JJ_SLIDESET_INSTALLATION</description>
 
     <languages>
 		<language tag="en-GB">language/en-GB/en-GB.mod_slideset.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.mod_slideset.sys.ini</language>		
     </languages>
     
-    <updateservers>
-	<server type="extension" name="JJ Slideset" priority="1">http://www.joomjunk.co.uk/updates/slideset_update.xml</server>
-    </updateservers>
+	<updateservers>
+		<server type="extension" name="JJ Slideset" priority="1">http://www.joomjunk.co.uk/updates/slideset_update.xml</server>
+	</updateservers>
 
 	<scriptfile>script.php</scriptfile>
 
@@ -27,13 +27,13 @@
 		<folder>img</folder>
 	</media>
 
-    <files>
-        <filename>mod_slideset.xml</filename>
-        <filename module="mod_slideset">mod_slideset.php</filename>
-        <filename>helper.php</filename>
-        <filename>index.html</filename>
+	<files>
+		<filename>mod_slideset.xml</filename>
+		<filename module="mod_slideset">mod_slideset.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
 		<folder>tmpl</folder>
-    </files>
+	</files>
 
 	<config>
 		<fields name="params">
