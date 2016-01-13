@@ -15,14 +15,12 @@ require_once dirname(__FILE__) . '/helper.php';
 
 $helper = new ModSlidesetHelper;
 
-// Load CSS
-JHtml::_('stylesheet', JUri::root() . 'media/mod_slideset/css/uikit.min.css');
 
-
-// Load JS
+// Import Assets
 JHtml::_('jquery.framework');
-JHtml::_('script', JUri::root() . 'media/mod_slideset/js/slideset.min.js');
-
+JHtml::_('script', JUri::root() . 'media/mod_slideset/js/core.js');
+JHtml::_('script', JUri::root() . 'media/mod_slideset/js/slideset.js');
+JHtml::_('stylesheet', JUri::root() . 'media/mod_slideset/css/uikit.min.css');
 
 // Get params
 $images 		= $params->get('slideset');
