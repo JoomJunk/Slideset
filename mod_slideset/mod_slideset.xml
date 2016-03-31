@@ -11,7 +11,9 @@
 
     <languages>
 		<language tag="en-GB">language/en-GB/en-GB.mod_slideset.ini</language>
-		<language tag="en-GB">language/en-GB/en-GB.mod_slideset.sys.ini</language>		
+		<language tag="en-GB">language/en-GB/en-GB.mod_slideset.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.mod_slideset.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.mod_slideset.sys.ini</language>
     </languages>
     
 	<updateservers>
