@@ -2,7 +2,7 @@
 /**
 * @package    JJ_Slideset
 * @author     JoomJunk <admin@joomjunk.co.uk>
-* @copyright  Copyright (C) 2011 - 2015 JoomJunk. All Rights Reserved
+* @copyright  Copyright (C) 2011 - 2017 JoomJunk. All Rights Reserved
 * @license    GPL v3.0 or later http://www.gnu.org/licenses/gpl-3.0.html
 */
 
@@ -25,7 +25,7 @@ class ModSlidesetHelper
 	public function group_by_key($array) 
 	{
 		$result = array();
-		
+
 		foreach ($array as $sub) 
 		{
 			foreach ($sub as $k => $v) 

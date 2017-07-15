@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.0" client="site" method="upgrade">
+<extension type="module" version="3.6" client="site" method="upgrade">
 	<name>JJ Slideset</name>
 	<author>JoomJunk</author>
 	<creationDate>17th Mar 2015</creationDate>
-	<copyright>Copyright (C) 2011 - 2015 JoomJunk</copyright>
+	<copyright>Copyright (C) 2011 - 2017 JoomJunk</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
 	<authorEmail>admin@joomjunk.co.uk</authorEmail>
 	<version>1.0.1</version>
@@ -15,7 +15,7 @@
 		<language tag="fr-FR">language/fr-FR/fr-FR.mod_slideset.ini</language>
 		<language tag="fr-FR">language/fr-FR/fr-FR.mod_slideset.sys.ini</language>
     </languages>
-    
+
 	<updateservers>
 		<server type="extension" name="JJ Slideset" priority="1">http://www.joomjunk.co.uk/updates/slideset_update.xml</server>
 	</updateservers>
@@ -40,28 +40,31 @@
 	<config>
 		<fields name="params">
 			<fieldset name="Basic">
-				
+
 				<field name="instructions" type="note" label="JJ_SLIDESET_INSTRUCTIONS" />
-				
+
 				<field name="uploadimages" type="media" directory="slideset" label="JJ_SLIDESET_UPLOAD_IMAGES_LABEL" />
-				
+
 				<field 
-					name="slideset" 
-					type="Repeatable" 
-					icon="list" 
+					name="slideset"
+					type="Repeatable"
+					icon="list"
 					label="JJ_SLIDESET_SELECT_IMAGES_LABEL"
 					default='{"slideset_image":["http://placehold.it/270x150", "http://placehold.it/270x150", "http://placehold.it/270x150", "http://placehold.it/270x150", "http://placehold.it/270x150", "http://placehold.it/270x150"]}'>
 					<fields name="params">
 						<fieldset hidden="true" name="slideset_modal" repeat="true">
 							<field name="slideset_image"
-								label="Image"
+								label="JJ_SLIDESET_IMAGE"
+								type="text" />
+							<field name="slideset_alt"
+								label="JJ_SLIDESET_ALT"
 								type="text" />
 						</fieldset>
 					</fields>
 				</field>
-				
+
 				<field name="items" type="text" default="3" label="JJ_SLIDESET_ITEMS_LABEL" description="JJ_SLIDESET_ITEMS_DESC" />
-				
+
 				<field name="animation" type="list" default="scale" label="JJ_SLIDESET_ANIMATION_LABEL" description="JJ_SLIDESET_ANIMATION_DESC">
 					<option value="scale">JJ_SLIDESET_ANIMATION_SCALE</option>
 					<option value="fade">JJ_SLIDESET_ANIMATION_FADE</option>
@@ -70,48 +73,41 @@
 					<option value="slide-top">JJ_SLIDESET_ANIMATION_SLIDE_TOP</option>
 					<option value="slide-bottom">JJ_SLIDESET_ANIMATION_SLIDE_BOTTOM</option>
 				</field>
-				
+
 				<field name="duration" type="text" default="200" label="JJ_SLIDESET_DURATION_LABEL" description="JJ_SLIDESET_DURATION_DESC" />
-				
+
 				<field name="nav" type="list" default="both" label="JJ_SLIDESET_NAV_LABEL" description="JJ_SLIDESET_NAV_DESC">
 					<option value="dotnav">JJ_SLIDESET_NAV_DOTNAV</option>
 					<option value="slidenav">JJ_SLIDESET_NAV_SLIDENAV</option>
 					<option value="both">JJ_SLIDESET_NAV_BOTH</option>
 				</field>
-				
+
 				<field name="navcolour" type="radio" class="btn-group" default="default" label="JJ_SLIDESET_NAV_COLOUR_LABEL" description="JJ_SLIDESET_NAV_COLOUR_DESC">
 					<option value="contrast">JJ_SLIDESET_NAV_COLOUR_LIGHT</option>
 					<option value="default">JJ_SLIDESET_NAV_COLOUR_DARK</option>
 				</field>
-				
+
 				<field name="autoplay" type="radio" class="btn-group" default="0" label="JJ_SLIDESET_AUTOPLAY_LABEL" description="JJ_SLIDESET_AUTOPLAY_DESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
-				
-				<field name="autoplayInt" showon="autoplay:1" type="text" default="7000" label="JJ_SLIDESET_AUTOPLAY_INTERVAL_LABEL" description="JJ_SLIDESET_AUTOPLAY_INTERVAL_DESC"/>
-				
+
+				<field name="autoplayInt" showon="autoplay:1" type="text" default="7000" label="JJ_SLIDESET_AUTOPLAY_INTERVAL_LABEL" description="JJ_SLIDESET_AUTOPLAY_INTERVAL_DESC" />
+
 				<field name="pause" showon="autoplay:1" type="radio" class="btn-group" default="0" label="JJ_SLIDESET_PAUSE_ON_HOVER_LABEL" description="JJ_SLIDESET_PAUSE_ON_HOVER_DESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
-				
 			</fieldset>
 			
 			<fieldset name="JJ_SLIDESET_REEPONSIVE">
-			
 				<field name="responsive_instructions" type="note" label="JJ_SLIDESET_RESPONSIVE_INSTRUCTIONS" />
-				
 				<field name="small" type="text" default="" label="JJ_SLIDESET_ITEMS_SMALL_LABEL" description="JJ_SLIDESET_ITEMS_SMALL_DESC" />
-				
 				<field name="medium" type="text" default="" label="JJ_SLIDESET_ITEMS_MEDIUM_LABEL" description="JJ_SLIDESET_ITEMS_MEDIUM_DESC" />
-				
 				<field name="large" type="text" default="" label="JJ_SLIDESET_ITEMS_LARGE_LABEL" description="JJ_SLIDESET_ITEMS_LARGE_DESC" />
-				
 				<field name="xlarge" type="text" default="" label="JJ_SLIDESET_ITEMS_XLARGE_LABEL" description="JJ_SLIDESET_ITEMS_XLARGE_DESC" />				
-				
 			</fieldset>
-			
+
 			<fieldset name="advanced">
 				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
 			</fieldset>
